@@ -90,8 +90,8 @@ def main():
     fig, ax = plt.subplots()
     ax.scatter(training_data[0], training_data[1], label="2010-2019")
     ax.plot(test_data[0], test_data[1], "r", label="2020")
-    ax.x_label("Day of year")
-    ax.y_label("Number of deaths in preceeding week")
+    ax.set_xlabel("Day of year")
+    ax.set_ylabel("Number of deaths in preceeding week")
     ax.legend()
     plt.show()
 
