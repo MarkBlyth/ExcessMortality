@@ -23,7 +23,9 @@ Excess mortality of Covid-19 can then be observed from this.
 
 # Running
 
-./run<sub>analysis.sh</sub>
+```bash
+./run_analysis.sh
+```
 
 Downloads and processes files, and plots the results.
 
