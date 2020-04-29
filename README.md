@@ -37,6 +37,7 @@ Downloads and processes files, and plots the results.
 -   Python3
 -   Numpy
 -   Matplotlib
+-   Scipy
 -   ssconvert (from Gnumeric), for converting filetypes
 
 
@@ -50,3 +51,11 @@ There's many things that could be done equally well in a different way:
 -   Pure-python file downloading
 -   Pure-bash file processing (eg. gnuplot)
 
+
+A vanilla Gaussian process regression is used for modelling the data.
+In reality, the data look to be thin-tailed and do not appear to follow a Gaussian distribution, so a warping GP would be a better class of Gaussian process model.
+Furthermore, the data are heteroscedastic, with the observation noise decreasing into the summer months.
+The posterior variance is a lot wider than would be expected, as a result of this.
+
+The hyperparameter optimisation could be improved, for example by encoding an explicit Jacobian.
+While this would speed up training, the model has been provided with suitably trained hyperparameters, so the actual runtime cost is reasonably low, despite the slow training.
