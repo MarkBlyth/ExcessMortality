@@ -12,7 +12,7 @@ declare -a arr=("2010/publishedweek2010.xls"
                 "2017/publishedweek522017.xls"
                 "2018/publishedweek522018withupdatedrespiratoryrow.xls"
                 "2019/publishedweek522019.xls"
-                "2020/publishedweek152020corrected.xlsx"
+                "2020/publishedweek1620201.xlsx"
             )
 
 
