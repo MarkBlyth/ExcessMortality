@@ -173,9 +173,9 @@ def main():
             gpr_mean + confidence_band,
             label="2\sigma confidence band",
         )
-    ax.scatter(training_data[0], training_data[1], label="2010-2019")
-    ax.plot(xs, gpr_mean, "k", label="Model mean weekly death rate")
-    ax.plot(test_data[0], test_data[1], "r", label="2020")
+    ax.scatter(training_data[0], training_data[1], label="Weekly mortality rate, 2010-2019")
+    ax.plot(xs, gpr_mean, "k", label="GPR mean weekly death rate")
+    ax.plot(test_data[0], test_data[1], "r", label="Weekly mortality rate, 2020")
     ax.set_xlabel("Day of year")
     ax.set_ylabel("Number of deaths in preceeding week")
     ax.set_title("UK excess mortality, 2020")
